@@ -216,7 +216,7 @@ class Scene extends StatelessWidget {
                       child: TextFormField(
                         obscureText: true,
                         decoration: InputDecoration(
-                          hintText: 'Password',
+                          hintText: 'Fluck',
                         ),
                         onSaved: (var password) {
                           profile.password = password;
