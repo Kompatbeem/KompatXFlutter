@@ -31,70 +31,7 @@ class Scene extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 61 * fem),
               width: 153 * fem,
               height: 36 * fem,
-              child: Stack(
-                children: [
-                  Positioned(
-                    // rectangle513HWj (1:67)
-                    left: 0 * fem,
-                    top: 0 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 145 * fem,
-                        height: 36 * fem,
-                        child: TextButton(
-                          onPressed: () {},
-                          style: TextButton.styleFrom(
-                            padding: EdgeInsets.zero,
-                          ),
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(12 * fem),
-                              color: Color(0x49d9dbe8),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    // 4vo (1:68)
-                    left: 30 * fem,
-                    top: 10 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 123 * fem,
-                        height: 16 * fem,
-                        child: Text(
-                          'คณะกรรมการตรวจนับ',
-                          style: SafeGoogleFont(
-                            'Poppins',
-                            fontSize: 12 * ffem,
-                            fontWeight: FontWeight.w600,
-                            height: 1.2999999523 * ffem / fem,
-                            color: Color(0xff6a6a6a),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    // unionDhD (1:69)
-                    left: 6 * fem,
-                    top: 7 * fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 18 * fem,
-                        height: 19 * fem,
-                        child: Image.asset(
-                          'assets/page-1/images/union.png',
-                          width: 18 * fem,
-                          height: 19 * fem,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              child: Stack(),
             ),
             Container(
               // frame2274Sw (1:70)
@@ -107,22 +44,6 @@ class Scene extends StatelessWidget {
                   child: Image.asset(
                     'assets/page-1/images/n-removebg-preview-1-daK.png',
                     fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              // 22P (1:72)
-              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 32 * fem, 32 * fem),
-              child: Center(
-                child: Text(
-                  'ผู้จัดการหอพัก',
-                  style: SafeGoogleFont(
-                    'Poppins',
-                    fontSize: 28 * ffem,
-                    fontWeight: FontWeight.w700,
-                    height: 1.0714285714 * ffem / fem,
-                    color: Color(0xff1a1d1e),
                   ),
                 ),
               ),
@@ -216,7 +137,7 @@ class Scene extends StatelessWidget {
                       child: TextFormField(
                         obscureText: true,
                         decoration: InputDecoration(
-                          hintText: 'Fluck',
+                          hintText: 'Password',
                         ),
                         onSaved: (var password) {
                           profile.password = password;
@@ -266,8 +187,8 @@ class Scene extends StatelessWidget {
               width: double.infinity,
               height: 54 * fem,
               decoration: BoxDecoration(
-                color: Color(0xff4ca6a8),
-                borderRadius: BorderRadius.circular(12 * fem),
+                color: Color.fromARGB(255, 12, 200, 144),
+                borderRadius: BorderRadius.circular(50 * fem),
               ),
               child: Center(
                 child: ElevatedButton(
